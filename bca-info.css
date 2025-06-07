@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: rgb(240, 144, 19);
+    height: auto;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.jumbotronn{
+    background-color: #F6F6F6;
+    height:  auto;
+}
+.title{
+    
+    float:left;
+    margin-right:350px;
+}
+.left{
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+}
+
+
+/*NAVIGATION CSS START*/
+
+.navigation{
+    height: 90px;
+    width: 100%;
+    background-color: #e1e3e7;
+    display: flex;
+}
+.nav-list{
+    font-family: "Lato", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    height: auto;
+    margin-top: 14px;
+}
+@media only screen and (max-width:800px) {
+    .nav-list{
+        font-family: "Lato", Sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        height: auto;
+        margin-top: 35px;
+    }
+}
+
+.brand{
+    position: absolute;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+.title{
+    margin-left: 100px;
+    float: left;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ nav {
+    float: right;
+}
+ nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ nav ul li {
+    float: left;
+    position: relative;
+}
+ nav ul li a,nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 55px;
+    color: #022874;
+    background: #fffdfd ;
+    text-decoration: none;
+}
+ nav ul li a{
+    background: transparent;
+}
+ nav ul li a:hover, nav ul li a:visited:hover {
+    color: #ffd600;
+    text-decoration: none;
+}
+ 
+nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: ' \025BE';
+}
+ nav ul li ul li {
+    min-width: 190px;
+}
+ nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+.navbar-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
+}
+/* Mobile navigation */
+ .nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    height: 55px;
+    width: 70px;
+}
+ @media only screen and (max-width: 800px) {
+    .nav-mobile {
+        display: block;
+    }
+    
+    nav {
+        width: 100%;
+        padding: 55px 0 15px;
+        height: auto;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        float: none;
+    }
+     nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+        background: #ffffff;
+    }
+     nav ul li ul li a {
+        padding-left: 30px;
+    }
+     .navbar-dropdown {
+        position: static;
+}
+
+ }
+ @media screen and (min-width:800px) {
+     .nav-list {
+        display: block;
+    }
+}
+ #navbar-toggle {
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+ #navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 30px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+ #navbar-toggle span:before {
+    top: -10px;
+}
+ #navbar-toggle span:after {
+    bottom: -10px;
+}
+ #navbar-toggle.active span {
+    background-color: transparent;
+}
+ #navbar-toggle.active span:before, #navbar-toggle.active span:after {
+    top: 0;
+}
+ #navbar-toggle.active span:before {
+    transform: rotate(45deg);
+}
+ #navbar-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+
+/* NAVIGATION CSS END */
+
+
+/*FORM CSS START*/
+
+.open-button {
+    border: none;
+    font-family: "Lato", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background: transparent;
+    color: #022874;
+}
+.open-button:hover{
+  color: #ffd600;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  bottom: 0;
+  right: 15px;
+  position:sticky;
+  z-index:1;
+  margin-top: 10px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*FORM CSS END*/
+
+
+/*jumbotron css start*/
+.container-fluidd{
+    width: 100%;
+    height: auto;
+}
+.containerr{
+    margin-right:35px;
+}
+.jumbotronn{
+    height: auto;
+    width: 100%;
+}
+.th{
+    color: #0e336b;
+    font-family: "Lato", Sans-serif;
+    font-size: 47px;
+    font-weight: 900;
+}
+.colorr{
+    height: 5px;
+    width: 100%
+}
+.thead{
+    padding-top: 20px;
+}
+.space{
+    height: 200px;
+    width: 100%;
+}
+/*jumbotron css end */
+
+
+/*row section start*/
+.info{
+    margin-top: 15px;
+    color: #0e336b;
+    font-family: "Lato", Sans-serif;
+    font-size: 47px;
+    font-weight: 900;
+}
+.info1{
+    color:#0e336b;
+    font-family: "Lato", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 20px;
+}
+.info2{
+    margin-top: 10px;
+}
+.info3 h2 a{
+    font-family: "Lato", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: none;
+    text-decoration: underline;
+    color:#0e336b;
+}
+.mtitle{
+    height: auto;
+    width: 100%;
+    margin-top: 35px;
+}
+.mtitle h2{
+    color: #0e336b;
+    font-family: "Lato", Sans-serif;
+    font-size: 41px;
+    font-weight: 800;
+}
+.elementor-title{
+    font-family: "Lato", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.color{
+    height: 5px;
+    width: 300px;
+}
+.event{
+    height: 300px;
+    width: 300px;
+    background-color: #6a0058;
+    color: white;
+}
+.newhr{
+    height: 2px;
+    width: 280px;
+    background-color: white; 
+}
+/*row section end*/
+
+/*footer start */
+.footer{ 
+    background-color:#232F3E;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.footlogo{
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.footname{
+    color: #FFFFFF;
+    font-family: "Lato", Sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.footicons span a:hover{
+    color: #ffd600;
+}
+.mail{
+    margin-left: 5px;
+    color: #ffffff;
+    text-decoration: none; 
+}
+.foot2{
+    color: #FFFFFF;
+    font-family: "Lato", Sans-serif;
+    margin-top: 50px;
+}
+
+.copyright{
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.subfoot{
+    color:#fff ;
+    height: auto;
+    width: 100%;
+    background-color:#131A22;
+}
+/*footer end */
+
+/*social icons started*/
+.social{
+    margin-left: 50%;
+    margin-right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.social-menu ul{
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #00256a;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #ff0a0a;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #0077b5;
+}
+/*social icons ended*/
